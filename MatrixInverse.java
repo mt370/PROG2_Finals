@@ -61,13 +61,13 @@ public class MatrixInverse {
     // Method to create a RealMatrix from a BigDecimal[][] array (required)
     // CODE REUSABILITY AND MODULARITY: Use of separate method 'createBigDecimalMatrix'
     private static RealMatrix createBigDecimalMatrix(BigDecimal[][] data) {
-        int rows = data.length;
+        int rows = data.length;    // NAMING CONVENTIONS: Variables start with lowercase letters
         int cols = data[0].length;
         RealMatrix matrix = MatrixUtils.createRealMatrix(rows, cols);
 
         // Populate the RealMatrix with BigDecimal values
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+        for (int i = 0; i < rows; i++) {    // CODE STRUCTURE AND FORMATTING: Use of braces for control structures
+            for (int j = 0; j < cols; j++) {    // CODE STRUCTURE AND FORMATTING: Use of 1 space after 'for'
                 matrix.setEntry(i, j, data[i][j].doubleValue());
             }
         }
