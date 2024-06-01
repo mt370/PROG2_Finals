@@ -1,3 +1,7 @@
+// BEST PRACTICE: File name matches the class name
+
+// BEST PRACTICE: Use of comments to explain the function of each block of code
+
 // Import statements for Java libraries and external libraries required to run the program
 import org.apache.commons.math3.linear.MatrixUtils;
 import org.apache.commons.math3.linear.RealMatrix;
@@ -5,6 +9,7 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class MatrixInverse {
+// BEST PRACTICE: Proper naming convention for class
 
     public static void main(String[] args) {
         // Create a Scanner object to read user input
